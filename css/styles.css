@@ -14,8 +14,8 @@
   --color-accent: #C4785F;        /* Terracotta */
 
   --color-text: #2C3E3A;          /* Dark greenish-gray */
-  --color-text-light: #5A6B66;
-  --color-text-muted: #8A9A95;
+  --color-text-light: #4A5B56;    /* Darker for better contrast */
+  --color-text-muted: #6A7A75;    /* Darker for better contrast */
 
   --color-bg: #FDFCFA;            /* Warm off-white */
   --color-bg-alt: #F5F2ED;        /* Light warm gray */
@@ -213,7 +213,9 @@ p:last-child {
 }
 
 .section--primary h2,
-.section--primary h3 {
+.section--primary h3,
+.section--primary p,
+.section--primary .lead {
   color: var(--color-white);
 }
 
@@ -1047,7 +1049,6 @@ p:last-child {
 
 .footer a {
   color: var(--color-white);
-  opacity: 0.9;
 }
 
 .footer a:hover {
@@ -1083,7 +1084,6 @@ p:last-child {
   gap: var(--space-2);
   font-size: var(--text-sm);
   margin-bottom: var(--space-2);
-  opacity: 0.9;
 }
 
 .footer__bottom {
