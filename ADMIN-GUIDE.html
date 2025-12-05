@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Guide | Beginnings Schools Website</title>
+  <style>
+    :root {
+      --color-primary: #2D5A4A;
+      --color-bg: #FDFCFA;
+      --color-text: #2C3E3A;
+      --color-border: #E5E0D8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 { color: var(--color-primary); margin-bottom: 1rem; }
+    h2 { color: var(--color-primary); margin: 2rem 0 1rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
+    h3 { margin: 1.5rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    code {
+      background: #f5f2ed;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+    }
+    pre code { background: none; padding: 0; color: inherit; }
+    .note {
+      background: #FEF3E2;
+      border-left: 4px solid #D4A34A;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .success {
+      background: #E6F4EA;
+      border-left: 4px solid #4A8F6D;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid var(--color-border);
+      padding: 0.75rem;
+      text-align: left;
+    }
+    th { background: #f5f2ed; }
+    a { color: var(--color-primary); }
+    ul, ol { margin: 1rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge--green { background: #E6F4EA; color: #4A8F6D; }
+    .badge--orange { background: #FEF3E2; color: #D4A34A; }
+    .badge--gray { background: #f5f2ed; color: #8A9A95; }
+  </style>
+</head>
+<body>
+  <h1>Beginnings Schools Website - Admin Guide</h1>
+  <p>This guide explains how to update common content on the website without needing technical knowledge.</p>
+
+  <h2>1. Updating Current Openings</h2>
+  <p>The current openings displayed on the website are controlled by a single file: <code>data/openings.json</code></p>
+
+  <h3>How to Update</h3>
+  <ol>
+    <li>Open <code>data/openings.json</code> in a text editor</li>
+    <li>Find the location and program you want to update</li>
+    <li>Change the <code>status</code>, <code>statusText</code>, and <code>note</code> values</li>
+    <li>Update the <code>_lastUpdated</code> date at the top of the file</li>
+    <li>Save the file</li>
+  </ol>
+
+  <h3>Status Options</h3>
+  <table>
+    <tr>
+      <th>Status Value</th>
+      <th>Display</th>
+      <th>When to Use</th>
+    </tr>
+    <tr>
+      <td><code>waitlist</code></td>
+      <td><span class="badge badge--orange">Waitlist Only</span></td>
+      <td>No immediate openings; families join the waitlist</td>
+    </tr>
+    <tr>
+      <td><code>limited</code></td>
+      <td><span class="badge badge--green">Limited Openings</span></td>
+      <td>A few spots available within 30-60 days</td>
+    </tr>
+    <tr>
+      <td><code>enrolling</code></td>
+      <td><span class="badge badge--green">Now Enrolling</span></td>
+      <td>Actively accepting new families for upcoming term</td>
+    </tr>
+    <tr>
+      <td><code>closed</code></td>
+      <td><span class="badge badge--gray">Not Accepting</span></td>
+      <td>Program at capacity, not taking waitlist</td>
+    </tr>
+  </table>
+
+  <h3>Example Change</h3>
+  <p>To change Queen Anne Toddlers from "Limited Openings" to "Waitlist Only":</p>
+  <pre><code>"toddlers": {
+  "status": "waitlist",
+  "statusText": "Waitlist Only",
+  "note": "Openings expected Summer 2025.",
+  "badgeColor": "orange"
+}</code></pre>
+
+  <div class="note">
+    <strong>Important:</strong> Be careful with quotation marks and commas. JSON is sensitive to formatting. If the website breaks after your edit, check that all quotes are closed and commas are in the right places.
+  </div>
+
+  <h2>2. Updating Testimonials</h2>
+  <p>Testimonials are stored in <code>data/content.json</code> under the <code>testimonials</code> section. Note: Testimonials are also hardcoded on the homepage for fallback - you may want to update both.</p>
+
+  <h3>Testimonial Format</h3>
+  <pre><code>{
+  "quote": "The testimonial text goes here...",
+  "author": "Parent Name",
+  "details": "Parent of a 3-year-old, Queen Anne",
+  "location": "queenAnne"
+}</code></pre>
+
+  <h2>3. Updating Team Bios</h2>
+  <p>Team information is stored in <code>data/content.json</code> and also in the HTML files. For full updates, you'll need to edit both:</p>
+  <ul>
+    <li><code>data/content.json</code> - for any dynamic uses</li>
+    <li><code>team.html</code> - for the main team page</li>
+  </ul>
+
+  <h2>4. Updating Contact Information</h2>
+  <p>Location details (address, phone, email) are in <code>data/site-config.json</code> and also in the footer of each HTML page. Update both for consistency.</p>
+
+  <h2>5. Adding/Replacing Photos</h2>
+  <ol>
+    <li>Add new images to the <code>images/</code> folder</li>
+    <li>Use descriptive filenames (e.g., <code>qa-classroom-art-2024.jpg</code>)</li>
+    <li>Update the <code>src</code> attribute in the relevant HTML file</li>
+    <li>Always include a descriptive <code>alt</code> attribute for accessibility</li>
+  </ol>
+
+  <h3>Recommended Image Sizes</h3>
+  <table>
+    <tr>
+      <th>Image Type</th>
+      <th>Recommended Size</th>
+      <th>Format</th>
+    </tr>
+    <tr>
+      <td>Hero images</td>
+      <td>1200 x 800 pixels</td>
+      <td>JPG (optimized)</td>
+    </tr>
+    <tr>
+      <td>Program cards</td>
+      <td>800 x 600 pixels</td>
+      <td>JPG</td>
+    </tr>
+    <tr>
+      <td>Team photos</td>
+      <td>400 x 400 pixels (square)</td>
+      <td>JPG</td>
+    </tr>
+    <tr>
+      <td>Gallery images</td>
+      <td>800 x 600 pixels</td>
+      <td>JPG</td>
+    </tr>
+  </table>
+
+  <div class="success">
+    <strong>Tip:</strong> Use a tool like <a href="https://squoosh.app" target="_blank">Squoosh</a> to compress images before uploading. Smaller file sizes = faster page loads.
+  </div>
+
+  <h2>6. File Locations Quick Reference</h2>
+  <table>
+    <tr>
+      <th>What to Update</th>
+      <th>File to Edit</th>
+    </tr>
+    <tr>
+      <td>Current openings</td>
+      <td><code>data/openings.json</code></td>
+    </tr>
+    <tr>
+      <td>Hero text</td>
+      <td><code>index.html</code> and <code>data/content.json</code></td>
+    </tr>
+    <tr>
+      <td>Testimonials</td>
+      <td><code>index.html</code> and <code>data/content.json</code></td>
+    </tr>
+    <tr>
+      <td>Team bios</td>
+      <td><code>team.html</code> and <code>data/content.json</code></td>
+    </tr>
+    <tr>
+      <td>Program details</td>
+      <td><code>programs.html</code></td>
+    </tr>
+    <tr>
+      <td>Location info</td>
+      <td><code>data/site-config.json</code> + page footers</td>
+    </tr>
+    <tr>
+      <td>SEO titles/descriptions</td>
+      <td><code>&lt;head&gt;</code> section of each HTML file</td>
+    </tr>
+    <tr>
+      <td>Site colors/fonts</td>
+      <td><code>css/styles.css</code> (CSS variables at top)</td>
+    </tr>
+  </table>
+
+  <h2>7. Testing Changes</h2>
+  <ol>
+    <li>Open the website in a browser after making changes</li>
+    <li>Check the page where you made updates</li>
+    <li>Test on mobile (use browser dev tools or your phone)</li>
+    <li>If something looks broken, check your recent edits for typos</li>
+  </ol>
+
+  <h2>8. Getting Help</h2>
+  <p>If you run into issues or need to make changes beyond what's covered here:</p>
+  <ul>
+    <li>Review this guide again for the specific task</li>
+    <li>Check that you saved the file after editing</li>
+    <li>Try clearing your browser cache (Ctrl+Shift+R or Cmd+Shift+R)</li>
+    <li>Contact your web developer for complex changes</li>
+  </ul>
+
+  <div class="note">
+    <strong>Remember:</strong> Always keep a backup of files before making major changes. You can copy the entire <code>data/</code> folder to a safe location before editing.
+  </div>
+
+  <hr style="margin: 2rem 0;">
+  <p style="color: #8A9A95; font-size: 0.875rem;">This guide is for internal use only. Last updated: December 2024.</p>
+</body>
+</html>

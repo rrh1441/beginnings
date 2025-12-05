@@ -1,0 +1,189 @@
+{
+  "_instructions": "Edit this file to update key copy areas on the website. Changes will appear after page refresh.",
+
+  "hero": {
+    "headline": "Nonprofit, play-based childcare in Queen Anne and Capitol Hill, Seattle.",
+    "subheadline": "NAEYC-accredited early learning for infants through preschool. Reggio-inspired curriculum, organic meals, and an inclusive community where every child belongs.",
+    "ctaPrimary": "Check Current Openings",
+    "ctaSecondary": "Schedule a Tour"
+  },
+
+  "about": {
+    "shortIntro": "Beginnings Schools is a nonprofit early learning organization with over 30 years of history in Seattle. We operate two NAEYC-accredited centers—one in Queen Anne and one in Capitol Hill—serving children from 3 months to 5 years old.",
+    "mission": "We believe every child deserves a nurturing, play-rich environment where they are seen, valued, and supported in their unique developmental journey.",
+    "history": "Founded in 1992 as a parent cooperative in Queen Anne, Beginnings grew from a small group of families seeking high-quality, community-driven childcare. Today, we maintain that cooperative spirit while serving a broader community across two locations.",
+    "philosophy": {
+      "title": "Our Approach",
+      "intro": "Our Reggio Emilia-inspired philosophy views children as capable, curious, and full of potential. Learning happens through exploration, relationships, and meaningful projects—not worksheets or rigid schedules.",
+      "pillars": [
+        {
+          "title": "Play-Based Learning",
+          "description": "Children learn best through hands-on exploration. Our classrooms are designed as inviting studios where curiosity leads the way."
+        },
+        {
+          "title": "Emergent Curriculum",
+          "description": "Teachers observe children's interests and design learning experiences that extend their thinking and build on their questions."
+        },
+        {
+          "title": "Inclusive Community",
+          "description": "We celebrate diversity and practice anti-bias education. Every family is welcomed and every child's identity is affirmed."
+        },
+        {
+          "title": "Parent Partnership",
+          "description": "Families are essential partners in their child's learning. We maintain open communication and offer meaningful ways to participate."
+        }
+      ]
+    },
+    "accreditation": {
+      "naeyc": "Both of our centers hold accreditation from the National Association for the Education of Young Children (NAEYC), meeting the highest standards for early childhood programs in the nation.",
+      "nonprofit": "As a 501(c)(3) nonprofit organization, every dollar goes back into our programs, our teachers, and our facilities—not to shareholders."
+    }
+  },
+
+  "enrollmentProcess": {
+    "intro": "We welcome families of all backgrounds. Our enrollment process is designed to help you learn about us—and for us to learn about your child and family.",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Submit an Inquiry",
+        "description": "Fill out our simple online form with your child's information and preferred location. We'll follow up within 1–2 business days."
+      },
+      {
+        "number": 2,
+        "title": "Tour the School",
+        "description": "Visit your preferred location to see our classrooms, meet teachers, and ask questions. Tours are typically 30–45 minutes."
+      },
+      {
+        "number": 3,
+        "title": "Receive an Offer",
+        "description": "When a spot opens for your child's age group, we'll extend an enrollment offer and share tuition and paperwork details."
+      },
+      {
+        "number": 4,
+        "title": "Start & Orientation",
+        "description": "Before your child's first day, we'll schedule an orientation visit and create a personalized transition plan together."
+      }
+    ],
+    "waitlistNote": "Infant spots are usually waitlist-based due to high demand and small class sizes. Toddler and preschool openings occur more frequently, especially in late summer and early fall. We encourage families to inquire early, even if you're planning ahead.",
+    "tuitionNote": "Tuition details are shared during your tour or upon inquiry. As a nonprofit, we work to keep costs reasonable while ensuring our teachers are fairly compensated."
+  },
+
+  "meals": {
+    "intro": "Good nutrition is foundational to learning and wellbeing. We take pride in the food we serve and the positive mealtime experiences we create.",
+    "approach": [
+      {
+        "title": "Organic & Whole Foods",
+        "description": "Our menus emphasize organic produce, whole grains, and minimally processed ingredients. We source locally when possible."
+      },
+      {
+        "title": "Inclusive of Dietary Needs",
+        "description": "We accommodate allergies, intolerances, and family dietary preferences. Please share your child's needs during enrollment."
+      },
+      {
+        "title": "Family-Style Meals",
+        "description": "Children serve themselves and eat together, building independence, social skills, and healthy relationships with food."
+      }
+    ],
+    "sampleMenu": "A typical lunch might include roasted chicken with herbs, quinoa, steamed broccoli, and fresh fruit. Morning and afternoon snacks feature items like hummus with vegetables, whole-grain crackers, and seasonal fruit."
+  },
+
+  "dailyLife": {
+    "intro": "Each day at Beginnings balances structure and flexibility, with plenty of time for play, rest, outdoor exploration, and creative expression.",
+    "rhythm": [
+      {
+        "time": "7:00–9:00 AM",
+        "activity": "Arrival, breakfast, free play and morning activities"
+      },
+      {
+        "time": "9:00–11:30 AM",
+        "activity": "Circle time, project work, outdoor play"
+      },
+      {
+        "time": "11:30 AM–12:30 PM",
+        "activity": "Lunch and transition to rest"
+      },
+      {
+        "time": "12:30–3:00 PM",
+        "activity": "Nap/quiet time (varies by age)"
+      },
+      {
+        "time": "3:00–4:00 PM",
+        "activity": "Afternoon snack and activities"
+      },
+      {
+        "time": "4:00–6:00 PM",
+        "activity": "Outdoor play, free choice, gradual pickup"
+      }
+    ],
+    "communication": {
+      "title": "Staying Connected",
+      "description": "We use a secure app to share daily updates, photos, and developmental observations. Teachers are available at pickup for quick chats, and we schedule formal conferences twice a year."
+    }
+  },
+
+  "team": {
+    "intro": "Our teachers are the heart of Beginnings. We invest in hiring experienced, passionate educators and supporting their ongoing growth.",
+    "leadership": [
+      {
+        "name": "Maria Santos",
+        "role": "Executive Director",
+        "bio": "Maria has led Beginnings for 12 years, bringing two decades of early childhood education experience and a deep commitment to equity in education.",
+        "location": "both"
+      },
+      {
+        "name": "David Chen",
+        "role": "Director, Queen Anne",
+        "bio": "David joined Beginnings as a toddler teacher in 2010 and now leads our original location. He holds an M.Ed. in Early Childhood Education from UW.",
+        "location": "queenAnne"
+      },
+      {
+        "name": "Aisha Johnson",
+        "role": "Director, Capitol Hill",
+        "bio": "Aisha opened our Capitol Hill location in 2018 after 8 years in Seattle early learning programs. She specializes in infant development and inclusive practices.",
+        "location": "capitolHill"
+      }
+    ],
+    "teacherHighlights": {
+      "queenAnne": [
+        {
+          "name": "Rosa Martinez",
+          "role": "Lead Infant Teacher",
+          "years": 9,
+          "bio": "Rosa creates a calm, responsive environment where babies feel safe to explore and connect."
+        },
+        {
+          "name": "James Park",
+          "role": "Lead Toddler Teacher",
+          "years": 7,
+          "bio": "James brings endless patience and creativity to supporting toddlers' growing independence."
+        },
+        {
+          "name": "Fatima Al-Hassan",
+          "role": "Lead Preschool Teacher",
+          "years": 11,
+          "bio": "Fatima's project-based approach sparks curiosity and kindergarten readiness in her preschoolers."
+        }
+      ],
+      "capitolHill": [
+        {
+          "name": "Emily Nguyen",
+          "role": "Lead Infant Teacher",
+          "years": 6,
+          "bio": "Emily's gentle, attentive care helps infants thrive during their critical first year."
+        },
+        {
+          "name": "Marcus Williams",
+          "role": "Lead Toddler Teacher",
+          "years": 5,
+          "bio": "Marcus turns everyday moments into learning adventures for his curious toddlers."
+        },
+        {
+          "name": "Sarah Goldberg",
+          "role": "Lead Preschool Teacher",
+          "years": 8,
+          "bio": "Sarah's art-focused curriculum helps preschoolers express themselves and build confidence."
+        }
+      ]
+    }
+  }
+}

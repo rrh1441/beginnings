@@ -1,0 +1,112 @@
+{
+  "siteName": "Beginnings Schools",
+  "tagline": "Nonprofit Early Learning in Seattle",
+  "contact": {
+    "generalEmail": "info@beginningsschools.org",
+    "generalPhone": "(206) 555-0100"
+  },
+  "locations": {
+    "queenAnne": {
+      "id": "queen-anne",
+      "name": "Queen Anne",
+      "fullName": "Beginnings School Queen Anne",
+      "address": {
+        "street": "123 Queen Anne Ave N",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98109"
+      },
+      "phone": "(206) 555-0101",
+      "email": "queenanne@beginningsschools.org",
+      "hours": "7:00 AM – 6:00 PM, Monday – Friday",
+      "description": "Nestled in the heart of Lower Queen Anne, our original location offers a warm, home-like setting with easy access for families commuting through downtown Seattle.",
+      "agesServed": "3 months to 5 years",
+      "programs": ["infants", "toddlers", "preschool"],
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.5!2d-122.3570!3d47.6280!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM3JzQxLjAiTiAxMjLCsDIxJzI1LjAiVw!5e0!3m2!1sen!2sus!4v1234567890",
+      "highlights": [
+        "Cozy, renovated Victorian building with natural light",
+        "Private outdoor play yard with garden beds",
+        "Average teacher tenure of 8+ years",
+        "Strong parent cooperative traditions"
+      ]
+    },
+    "capitolHill": {
+      "id": "capitol-hill",
+      "name": "Capitol Hill",
+      "fullName": "Beginnings School Capitol Hill",
+      "address": {
+        "street": "456 15th Ave E",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98112"
+      },
+      "phone": "(206) 555-0102",
+      "email": "capitolhill@beginningsschools.org",
+      "hours": "7:00 AM – 6:00 PM, Monday – Friday",
+      "description": "Located in a vibrant Capitol Hill neighborhood, our second campus brings the same nurturing philosophy to families on the east side of the city.",
+      "agesServed": "3 months to 5 years",
+      "programs": ["infants", "toddlers", "preschool"],
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.5!2d-122.3120!3d47.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM3JzMwLjAiTiAxMjLCsDE4JzQzLjAiVw!5e0!3m2!1sen!2sus!4v1234567890",
+      "highlights": [
+        "Modern, purpose-built early learning space",
+        "Large outdoor playground with climbing structures",
+        "Dedicated art studio and sensory room",
+        "Walking distance to Volunteer Park"
+      ]
+    }
+  },
+  "programs": {
+    "infants": {
+      "id": "infants",
+      "name": "Infants",
+      "ageRange": "3–12 months",
+      "ratio": "1:4 teacher-to-child ratio",
+      "shortDescription": "A nurturing, responsive environment for your baby's crucial first year."
+    },
+    "toddlers": {
+      "id": "toddlers",
+      "name": "Toddlers",
+      "ageRange": "1–3 years",
+      "ratio": "1:5 teacher-to-child ratio",
+      "shortDescription": "Exploration and discovery as your toddler develops independence and social skills."
+    },
+    "preschool": {
+      "id": "preschool",
+      "name": "Preschool",
+      "ageRange": "3–5 years",
+      "ratio": "1:8 teacher-to-child ratio",
+      "shortDescription": "Preparing for kindergarten through play-based, project-driven learning."
+    }
+  },
+  "testimonials": [
+    {
+      "quote": "Beginnings became our second family. The teachers truly know and love our daughter, and we've seen her blossom into a confident, curious learner.",
+      "author": "Sarah M.",
+      "details": "Parent of a 4-year-old, Queen Anne",
+      "location": "queenAnne"
+    },
+    {
+      "quote": "As first-time parents, leaving our infant was terrifying. The staff's warmth and constant communication made all the difference. We actually look forward to drop-off.",
+      "author": "Marcus & Elena T.",
+      "details": "Parents of a 10-month-old, Capitol Hill",
+      "location": "capitolHill"
+    },
+    {
+      "quote": "The Reggio-inspired approach here isn't just marketing—you see it in the art, the projects, the way teachers follow children's interests. Our son has thrived.",
+      "author": "David K.",
+      "details": "Parent of a 3-year-old, Queen Anne",
+      "location": "queenAnne"
+    },
+    {
+      "quote": "Both of our kids went through Beginnings, and we couldn't imagine our Seattle parenting journey without this community. Worth every moment on the waitlist.",
+      "author": "Jennifer L.",
+      "details": "Parent of graduates now in elementary school, Capitol Hill",
+      "location": "capitolHill"
+    }
+  ],
+  "seo": {
+    "defaultTitle": "Beginnings Schools | Nonprofit Daycare & Preschool in Seattle",
+    "defaultDescription": "NAEYC-accredited, play-based early learning for infants, toddlers, and preschoolers in Queen Anne and Capitol Hill, Seattle. Organic meals, inclusive community.",
+    "keywords": ["daycare Seattle", "preschool Seattle", "childcare Queen Anne", "childcare Capitol Hill", "infant care Seattle", "toddler program Seattle", "NAEYC accredited daycare"]
+  }
+}

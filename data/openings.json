@@ -1,0 +1,69 @@
+{
+  "_instructions": "Update this file to change current openings displayed on the website. Status options: 'waitlist', 'limited', 'enrolling', 'closed'. The 'note' field is optional free-text.",
+  "_lastUpdated": "2024-12-04",
+  "_updatedBy": "Admin",
+
+  "queenAnne": {
+    "infants": {
+      "status": "waitlist",
+      "statusText": "Waitlist Only",
+      "note": "Typical wait time 6–12 months. We encourage early inquiry.",
+      "badgeColor": "orange"
+    },
+    "toddlers": {
+      "status": "limited",
+      "statusText": "Limited Openings",
+      "note": "1–2 spots available starting February 2025.",
+      "badgeColor": "green"
+    },
+    "preschool": {
+      "status": "enrolling",
+      "statusText": "Now Enrolling for Fall 2025",
+      "note": "Spaces available for children turning 3 by August 31.",
+      "badgeColor": "green"
+    }
+  },
+  "capitolHill": {
+    "infants": {
+      "status": "waitlist",
+      "statusText": "Waitlist Only",
+      "note": "Join our waitlist for priority notification.",
+      "badgeColor": "orange"
+    },
+    "toddlers": {
+      "status": "waitlist",
+      "statusText": "Waitlist Only",
+      "note": "Openings expected Spring 2025.",
+      "badgeColor": "orange"
+    },
+    "preschool": {
+      "status": "limited",
+      "statusText": "Limited Openings",
+      "note": "A few spots for January and Fall 2025 start dates.",
+      "badgeColor": "green"
+    }
+  },
+
+  "statusOptions": {
+    "waitlist": {
+      "label": "Waitlist Only",
+      "description": "No immediate openings; families can join the waitlist.",
+      "badgeColor": "orange"
+    },
+    "limited": {
+      "label": "Limited Openings",
+      "description": "A small number of spots available soon.",
+      "badgeColor": "green"
+    },
+    "enrolling": {
+      "label": "Now Enrolling",
+      "description": "Actively accepting new enrollments.",
+      "badgeColor": "green"
+    },
+    "closed": {
+      "label": "Not Accepting Applications",
+      "description": "Program is at capacity with no waitlist.",
+      "badgeColor": "gray"
+    }
+  }
+}

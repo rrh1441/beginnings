@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Schedule a Tour | Beginnings Schools Seattle</title>
+  <meta name="description" content="Contact Beginnings Schools in Queen Anne or Capitol Hill, Seattle. Schedule a tour, inquire about enrollment, or ask questions about our infant, toddler, and preschool programs.">
+  <meta name="keywords" content="contact daycare Seattle, schedule tour preschool, enrollment inquiry childcare Queen Anne Capitol Hill">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Beginnings Schools | Schedule a Tour">
+  <meta property="og:description" content="Get in touch with our Queen Anne or Capitol Hill locations. Schedule a tour or inquire about enrollment.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <span class="header__logo-text">Beginnings</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="/programs.html" class="nav__link">Programs</a></li>
+            <li><a href="/locations.html" class="nav__link">Locations</a></li>
+            <li><a href="/admissions.html" class="nav__link">Admissions</a></li>
+            <li><a href="/about.html" class="nav__link">About</a></li>
+            <li><a href="/contact.html" class="nav__link nav__link--active">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="/admissions.html#openings" class="btn btn--primary btn--small header__cta">Check Openings</a>
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+    <ul class="mobile-nav__list">
+      <li><a href="/" class="mobile-nav__link">Home</a></li>
+      <li><a href="/programs.html" class="mobile-nav__link">Programs</a></li>
+      <li><a href="/locations.html" class="mobile-nav__link">Locations</a></li>
+      <li><a href="/admissions.html" class="mobile-nav__link">Admissions</a></li>
+      <li><a href="/about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="/team.html" class="mobile-nav__link">Our Team</a></li>
+      <li><a href="/daily-life.html" class="mobile-nav__link">Meals & Daily Life</a></li>
+      <li><a href="/contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="/admissions.html#openings" class="btn btn--primary btn--block">Check Openings</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section section--warm">
+      <div class="container">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="lead text-center" style="max-width: 600px; margin: 0 auto;">We'd love to hear from you. Submit an inquiry to learn about availability, schedule a tour, or ask any questions you have.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="gap: var(--space-12); align-items: start;">
+
+          <!-- Form -->
+          <div>
+            <h2 class="mb-2">Enrollment Inquiry</h2>
+            <p class="mb-6" style="color: var(--color-text-light);">Fill out the form below and we'll get back to you within 1–2 business days.</p>
+
+            <form id="contact-form" class="form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="parent_name" class="form-label form-label--required">Your Name</label>
+                  <input type="text" id="parent_name" name="parent_name" class="form-input" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label form-label--required">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel">
+                  <p class="form-hint">Optional, but helpful for scheduling tours</p>
+                </div>
+                <div class="form-group">
+                  <label for="child_dob" class="form-label form-label--required">Child's Date of Birth</label>
+                  <input type="date" id="child_dob" name="child_dob" class="form-input" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="location" class="form-label form-label--required">Preferred Location</label>
+                  <select id="location" name="location" class="form-select" required>
+                    <option value="">Select a location...</option>
+                    <option value="queen-anne">Queen Anne</option>
+                    <option value="capitol-hill">Capitol Hill</option>
+                    <option value="either">Either location</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="start_date" class="form-label">Desired Start Date</label>
+                  <input type="date" id="start_date" name="start_date" class="form-input">
+                  <p class="form-hint">Approximate is fine</p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Questions or Comments</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your family, any questions you have, or specific needs we should know about."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="flex items-center gap-2" style="cursor: pointer;">
+                  <input type="checkbox" name="tour_request" value="yes" style="width: 20px; height: 20px;">
+                  <span style="font-size: var(--text-sm);">I'd like to schedule a tour</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large btn--block">Submit Inquiry</button>
+
+              <p class="text-center mt-4 small muted">We typically respond within 1–2 business days.</p>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <div class="card mb-6">
+              <h3 class="mb-4">Queen Anne Location</h3>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Address</strong>
+                <p style="font-size: var(--text-sm); color: var(--color-text-light); margin: 0;">
+                  123 Queen Anne Ave N<br>
+                  Seattle, WA 98109
+                </p>
+              </div>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Phone</strong>
+                <p style="margin: 0;">
+                  <a href="tel:+12065550101" style="font-size: var(--text-sm);">(206) 555-0101</a>
+                </p>
+              </div>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Email</strong>
+                <p style="margin: 0;">
+                  <a href="mailto:queenanne@beginningsschools.org" style="font-size: var(--text-sm);">queenanne@beginningsschools.org</a>
+                </p>
+              </div>
+              <div>
+                <strong style="font-size: var(--text-sm);">Hours</strong>
+                <p style="font-size: var(--text-sm); color: var(--color-text-light); margin: 0;">
+                  Monday – Friday, 7:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-6">
+              <h3 class="mb-4">Capitol Hill Location</h3>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Address</strong>
+                <p style="font-size: var(--text-sm); color: var(--color-text-light); margin: 0;">
+                  456 15th Ave E<br>
+                  Seattle, WA 98112
+                </p>
+              </div>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Phone</strong>
+                <p style="margin: 0;">
+                  <a href="tel:+12065550102" style="font-size: var(--text-sm);">(206) 555-0102</a>
+                </p>
+              </div>
+              <div class="mb-4">
+                <strong style="font-size: var(--text-sm);">Email</strong>
+                <p style="margin: 0;">
+                  <a href="mailto:capitolhill@beginningsschools.org" style="font-size: var(--text-sm);">capitolhill@beginningsschools.org</a>
+                </p>
+              </div>
+              <div>
+                <strong style="font-size: var(--text-sm);">Hours</strong>
+                <p style="font-size: var(--text-sm); color: var(--color-text-light); margin: 0;">
+                  Monday – Friday, 7:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="background-color: var(--color-bg-warm); border: none;">
+              <h4 class="mb-2">General Inquiries</h4>
+              <p style="font-size: var(--text-sm); color: var(--color-text-light);">For questions not related to enrollment, or if you're unsure which location to contact:</p>
+              <p style="margin: 0;">
+                <a href="mailto:info@beginningsschools.org">info@beginningsschools.org</a><br>
+                <a href="tel:+12065550100">(206) 555-0100</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Maps -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="text-center mb-8">Find Us</h2>
+
+        <div class="grid grid--2" style="gap: var(--space-6);">
+          <div>
+            <h3 class="mb-4">Queen Anne</h3>
+            <div class="map-container" style="height: 300px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.5!2d-122.3570!3d47.6280!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM3JzQxLjAiTiAxMjLCsDIxJzI1LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Map to Beginnings School Queen Anne">
+              </iframe>
+            </div>
+            <p class="mt-2 small muted">Street parking available. Metro routes 1, 2, 13.</p>
+          </div>
+          <div>
+            <h3 class="mb-4">Capitol Hill</h3>
+            <div class="map-container" style="height: 300px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.5!2d-122.3120!3d47.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM3JzMwLjAiTiAxMjLCsDE4JzQzLjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Map to Beginnings School Capitol Hill">
+              </iframe>
+            </div>
+            <p class="mt-2 small muted">On-site parking lot. Metro routes 10, 11, 49.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container container--narrow">
+        <h2 class="text-center mb-8">Quick Answers</h2>
+
+        <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+          <div class="card">
+            <h4>When can I schedule a tour?</h4>
+            <p style="color: var(--color-text-light); margin-bottom: 0;">Tours are offered Tuesday through Thursday, typically between 9:30 AM and 11:00 AM when you can see classrooms in action. After submitting your inquiry, we'll reach out to schedule a time that works for you.</p>
+          </div>
+
+          <div class="card">
+            <h4>Should I inquire even if I don't need care right away?</h4>
+            <p style="color: var(--color-text-light); margin-bottom: 0;">Absolutely. Many families inquire during pregnancy or months in advance. Given waitlists, especially for infants, early inquiry is encouraged. There's no penalty for planning ahead.</p>
+          </div>
+
+          <div class="card">
+            <h4>Can I visit both locations?</h4>
+            <p style="color: var(--color-text-light); margin-bottom: 0;">Yes! Many families tour both before deciding. Just let us know you'd like to see both, and we'll coordinate tours at each site.</p>
+          </div>
+
+          <div class="card">
+            <h4>What if I have questions before touring?</h4>
+            <p style="color: var(--color-text-light); margin-bottom: 0;">Include your questions in the inquiry form or email us directly. We're happy to answer questions about our programs, philosophy, or availability before you schedule a visit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h4>Beginnings Schools</h4>
+          <p style="font-size: var(--text-sm); opacity: 0.9; margin-bottom: var(--space-4);">Nonprofit, NAEYC-accredited early learning in Seattle since 1992.</p>
+          <div class="footer__badges">
+            <span class="footer__badge">NAEYC Accredited</span>
+            <span class="footer__badge">501(c)(3)</span>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h4>Queen Anne</h4>
+          <div class="footer__contact-item">123 Queen Anne Ave N<br>Seattle, WA 98109</div>
+          <div class="footer__contact-item">(206) 555-0101</div>
+          <div class="footer__contact-item"><a href="mailto:queenanne@beginningsschools.org">queenanne@beginningsschools.org</a></div>
+        </div>
+        <div class="footer__section">
+          <h4>Capitol Hill</h4>
+          <div class="footer__contact-item">456 15th Ave E<br>Seattle, WA 98112</div>
+          <div class="footer__contact-item">(206) 555-0102</div>
+          <div class="footer__contact-item"><a href="mailto:capitolhill@beginningsschools.org">capitolhill@beginningsschools.org</a></div>
+        </div>
+        <div class="footer__section">
+          <h4>Quick Links</h4>
+          <div class="footer__links">
+            <a href="/programs.html" class="footer__link">Programs</a>
+            <a href="/admissions.html" class="footer__link">Admissions</a>
+            <a href="/about.html" class="footer__link">About Us</a>
+            <a href="/team.html" class="footer__link">Our Team</a>
+            <a href="/daily-life.html" class="footer__link">Daily Life</a>
+            <a href="/contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__logo">Beginnings Schools</span>
+        <span class="footer__copyright">&copy; 2024 Beginnings Schools. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    // Pre-select location if passed via URL parameter
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const location = params.get('location');
+      if (location) {
+        const select = document.getElementById('location');
+        if (select) {
+          select.value = location;
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
